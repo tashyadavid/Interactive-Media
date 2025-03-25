@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tashya's Workbook</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ztu5ksk.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ztu5ksk.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ztu5ksk.css" />
+    <style>
+      @font-face {
+        font-family: "AstonScript";
+        src: url("assets/Aston Script.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        margin: 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #79fe0c;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 0;
+      }
+
+      .navbar a {
+        color: black;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 0 10px;
+        font-family: "owners-wide", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      .navbar a:hover {
+        background: blue;
+        color: white;
+      }
+
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -100px;
+        margin-bottom: -100px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        position: relative;
+      }
+
+      .logo {
+        width: 1000px;
+        height: auto;
+      }
+      .logo-container:hover .logo {
+        content: url("/Myworkbook/img/alt-logo.png");
+      }
+
+      .main h1 {
+        font-family: "AstonScript", sans-serif;
+        font-size: 30px;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: blue;
+      }
+
+      .main h1 .workbook {
+        font-family: "owners-wide", sans-serif;
+      }
+
+      #bg-video {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -10;
+        min-width: 100vw;
+        min-height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo-container">
+        <img src="/Myworkbook/img/logo.png" alt="Logo" class="logo" id="logo" />
+      </div>
+    </div>
+    <!--audio-->
+    <audio controls>
+      <source src="/Myworkbook/audio/After-You-Final.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="navbar">
+      <a href="week1.html">Week 1</a>
+      <a href="week2.html">Week 2</a>
+      <a href="week3.html">Week 3</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="main">
+      <h1>Welcome to my <span class="workbook">WORKBOOK</span></h1>
+    </div>
+
+    <video
+      muted
+      autoplay
+      loop
+      id="bg-video"
+      src="/Myworkbook/video/beach.mp4"
+    ></video>
+  </body>
+</html>
